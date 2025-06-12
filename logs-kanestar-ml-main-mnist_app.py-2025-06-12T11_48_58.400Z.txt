@@ -1,0 +1,186 @@
+
+[     UTC     ] Logs for 7bkqwtwovbiortken8uzuh.streamlit.app/
+────────────────────────────────────────────────────────────────────────────────────────
+[11:45:41] 🚀 Starting up repository: 'ml', branch: 'main', main module: 'mnist_app.py'
+[11:45:41] 🐙 Cloning repository...
+[11:45:42] 🐙 Cloning into '/mount/src/ml'...
+
+[11:45:42] 🐙 Cloned repository!
+[11:45:42] 🐙 Pulling code changes from Github...
+[11:45:42] 📦 Processing dependencies...
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+Using uv pip install.
+Using Python 3.13.3 environment at /home/adminuser/venv
+  × No solution found when resolving dependencies:
+  ╰─▶ Because only the following versions of tensorflow are available:
+          tensorflow<=2.5.3
+          tensorflow>=2.6.0,<=2.6.5
+          tensorflow>=2.7.0,<=2.7.4
+          tensorflow>=2.8.0,<=2.8.4
+          tensorflow>=2.9.0,<=2.9.3
+          tensorflow>=2.10.0,<=2.10.1
+          tensorflow>=2.11.0,<=2.11.1
+          tensorflow>=2.12.0,<=2.12.1
+          tensorflow>=2.13.0,<=2.13.1
+          tensorflow>=2.14.0,<=2.14.1
+          tensorflow>=2.15.0,<=2.15.1
+          tensorflow>=2.16.1,<=2.16.2
+          tensorflow>=2.17.0,<=2.17.1
+          tensorflow>=2.18.0,<=2.18.1
+          tensorflow>=2.19.0
+      and tensorflow<=1.15.0 has no wheels with a matching Python
+      implementation tag, we can conclude that all of:
+          tensorflow<0.12.1
+          tensorflow>2.5.3,<2.6.0
+          tensorflow>2.6.5,<2.7.0
+          tensorflow>2.7.4,<2.8.0
+          tensorflow>2.8.4,<2.9.0
+          tensorflow>2.9.3,<2.10.0
+          tensorflow>2.10.1,<2.11.0
+          tensorflow>2.11.1,<2.12.0
+          tensorflow>2.12.1,<2.13.0
+          tensorflow>2.13.1,<2.14.0
+          tensorflow>2.14.1,<2.15.0
+          tensorflow>2.15.1,<2.16.1
+          tensorflow>2.16.2,<2.17.0
+          tensorflow>2.17.1,<2.18.0
+          tensorflow>2.18.1,<2.19.0
+       cannot be used.
+      And because tensorflow>=1.15.2,<=1.15.5 has no wheels with a matching
+      Python ABI tag and tensorflow==2.0.0 has no wheels with a matching
+      Python implementation tag, we can conclude that all of:
+          tensorflow<2.0.1
+          tensorflow>2.5.3,<2.6.0
+          tensorflow>2.6.5,<2.7.0
+          tensorflow>2.7.4,<2.8.0
+          tensorflow>2.8.4,<2.9.0
+          tensorflow>2.9.3,<2.10.0
+          tensorflow>2.10.1,<2.11.0
+          tensorflow>2.11.1,<2.12.0
+          tensorflow>2.12.1,<2.13.0
+          tensorflow>2.13.1,<2.14.0
+          tensorflow>2.14.1,<2.15.0
+          tensorflow>2.15.1,<2.16.1
+          tensorflow>2.16.2,<2.17.0
+          tensorflow>2.17.1,<2.18.0
+          tensorflow>2.18.1,<2.19.0
+       cannot be used.
+      And because tensorflow>=2.0.1,<=2.0.4 has no wheels with a matching
+      Python ABI tag and tensorflow==2.1.0 has no wheels with a matching
+      Python implementation tag, we can conclude that all of:
+          tensorflow<2.1.1
+          tensorflow>2.5.3,<2.6.0
+          tensorflow>2.6.5,<2.7.0
+          tensorflow>2.7.4,<2.8.0
+          tensorflow>2.8.4,<2.9.0
+          tensorflow>2.9.3,<2.10.0
+          tensorflow>2.10.1,<2.11.0
+          tensorflow>2.11.1,<2.12.0
+          tensorflow>2.12.1,<2.13.0
+          tensorflow>2.13.1,<2.14.0
+          tensorflow>2.14.1,<2.15.0
+          tensorflow>2.15.1,<2.16.1
+          tensorflow>2.16.2,<2.17.0
+          tensorflow>2.17.1,<2.18.0
+          tensorflow>2.18.1,<2.19.0
+       cannot be used.
+      And because all of:
+          tensorflow>=2.1.1,<=2.5.3
+          tensorflow>=2.6.0,<=2.6.5
+          tensorflow>=2.7.0,<=2.7.4
+          tensorflow>=2.8.0,<=2.8.4
+          tensorflow>=2.9.0,<=2.9.3
+          tensorflow>=2.10.0,<=2.10.1
+          tensorflow>=2.11.0,<=2.11.1
+          tensorflow>=2.12.0,<=2.12.1
+          tensorflow>=2.13.0,<=2.13.1
+          tensorflow>=2.14.0,<=2.14.1
+          tensorflow>=2.15.0,<=2.15.1
+          tensorflow>=2.16.1,<=2.16.2
+          tensorflow>=2.17.0,<=2.17.1
+          tensorflow>=2.18.0,<=2.18.1
+          tensorflow>=2.19.0
+      have no wheels with a matching Python ABI tag and you require
+      tensorflow, we can conclude that your requirements are unsatisfiable.
+
+      hint: Pre-releases are available for tensorflow in the requested
+      range (e.g., 2.19.0rc0), but pre-releases weren't enabled (try:
+      `--prerelease=allow`)
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using uv pip install.
+Using Python 3.13.3 environment at /home/adminuser/venv
+Resolved 4 packages in 121ms
+Prepared 4 packages in 124ms
+Installed 4 packages in 11ms
+ + markdown-it-py==3.0.0[2025-06-12 11:45:43.573005] 
+ + mdurl==0.1.2
+ + pygments==2.19.1
+ + rich==14.0.0
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+
+──────────────────────────────────────── pip ───────────────────────────────────────────
+
+Using standard pip install.
+Collecting pandas (from -r /mount/src/ml/requirements.txt (line 1))
+  Downloading pandas-2.3.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (91 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 91.2/91.2 kB 4.3 MB/s eta 0:00:00[2025-06-12 11:45:45.282784] 
+Collecting scikit-learn (from -r /mount/src/ml/requirements.txt (line 2))
+  Downloading scikit_learn-1.7.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (17 kB)
+Collecting numpy (from -r /mount/src/ml/requirements.txt (line 3))
+  Downloading numpy-2.3.0-cp313-cp313-manylinux_2_28_x86_64.whl.metadata (62 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.1/62.1 kB 81.1 MB/s eta 0:00:00[2025-06-12 11:45:45.687020] 
+ERROR: Ignored the following versions that require a different python version: 1.21.2 Requires-Python >=3.7,<3.11; 1.21.3 Requires-Python >=3.7,<3.11; 1.21.4 Requires-Python >=3.7,<3.11; 1.21.5 Requires-Python >=3.7,<3.11; 1.21.6 Requires-Python >=3.7,<3.11; 1.26.0 Requires-Python <3.13,>=3.9; 1.26.1 Requires-Python <3.13,>=3.9
+ERROR: Could not find a version that satisfies the requirement tensorflow (from versions: none)
+ERROR: No matching distribution found for tensorflow
+
+[notice] A new release of pip is available: 24.0 -> 25.1.1
+[notice] To update, run: pip install --upgrade pip
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using standard pip install.
+Collecting rich>=10.14.0
+  Downloading rich-14.0.0-py3-none-any.whl.metadata (18 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=10.14.0)
+  Downloading markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=10.14.0)
+  Downloading pygments-2.19.1-py3-none-any.whl.metadata (2.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=10.14.0)
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Downloading rich-14.0.0-py3-none-any.whl (243 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 243.2/243.2 kB 16.0 MB/s eta 0:00:00[2025-06-12 11:45:46.857632] 
+Downloading markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.5/87.5 kB 185.0 MB/s eta 0:00:00[2025-06-12 11:45:46.868167] 
+Downloading pygments-2.19.1-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 84.0 MB/s eta 0:00:00[2025-06-12 11:45:46.893053] 
+Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Installing collected packages: pygments, mdurl, markdown-it-py, rich
+  Attempting uninstall: pygments
+    Found existing installation: Pygments 2.19.1
+    Uninstalling Pygments-2.19.1:
+      Successfully uninstalled Pygments-2.19.1
+  Attempting uninstall: mdurl
+    Found existing installation: mdurl 0.1.2
+    Uninstalling mdurl-0.1.2:
+      Successfully uninstalled mdurl-0.1.2
+  Attempting uninstall: markdown-it-py
+    Found existing installation: markdown-it-py 3.0.0
+    Uninstalling markdown-it-py-3.0.0:
+      Successfully uninstalled markdown-it-py-3.0.0
+  Attempting uninstall: rich
+    Found existing installation: rich 14.0.0
+    Uninstalling rich-14.0.0:
+      Successfully uninstalled rich-14.0.0
+Successfully installed markdown-it-py-3.0.0 mdurl-0.1.2 pygments-2.19.1 rich-14.0.0
+
+[notice] A new release of pip is available: 24.0 -> 25.1.1
+[notice] To update, run: pip install --upgrade pip
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[11:45:49] ❗️ installer returned a non-zero exit code
+[11:45:49] ❗️ Error during processing dependencies! Please fix the error and push an update, or try restarting the app.

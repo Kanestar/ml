@@ -1,156 +1,157 @@
-# Week 3: Machine Learning, Deep Learning, and NLP Tasks
+# Week 3: Machine Learning, Deep Learning, and NLP Projects
 
-This folder contains solutions to various machine learning, deep learning, and natural language processing tasks, as well as a deployment example.
+This folder contains a set of projects covering fundamental concepts in Classical Machine Learning, Deep Learning, and Natural Language Processing, culminating in a web application deployment example.
 
 ## Table of Contents
-1.  [Task 1: Classical ML with Scikit-learn (Iris Species Classification)](#task-1-classical-ml-with-scikit-learn-iris-species-classification)
-2.  [Task 2: Deep Learning with TensorFlow/Keras (MNIST Handwritten Digits Classification)](#task-2-deep-learning-with-tensorflowkeras-mnist-handwritten-digits-classification)
-3.  [Task 3: NLP with spaCy (Amazon Product Reviews - NER & Sentiment)](#task-3-nlp-with-spacy-amazon-product-reviews---ner--sentiment)
-4.  [Deployment: MNIST Classifier with Streamlit](#deployment-mnist-classifier-with-streamlit)
 
-## General Setup
-
-Before running any of the scripts, ensure you have Python installed (Python 3.7+ is recommended). If not, download it from [python.org](https://python.org) and make sure to check "Add Python to PATH" during installation.
-
-All necessary Python packages are listed in `requirements.txt`. To install them, navigate to the `week 3` folder in your terminal and run:
-
-```bash
-pip install -r requirements.txt
-```
+1.  [Getting Started (General Setup)](#getting-started-general-setup)
+2.  [Task 1: Classical ML - Iris Species Classification](#task-1-classical-ml---iris-species-classification)
+3.  [Task 2: Deep Learning - MNIST Handwritten Digits Classification](#task-2-deep-learning---mnist-handwritten-digits-classification)
+4.  [Task 3: NLP - Amazon Product Reviews (NER & Sentiment)](#task-3-nlp---amazon-product-reviews-ner--sentiment)
+5.  [Deployment: MNIST Digit Classifier Web App (Streamlit)](#deployment-mnist-digit-classifier-web-app-streamlit)
 
 ---
 
-## 1. Task 1: Classical ML with Scikit-learn (Iris Species Classification)
+## 1. Getting Started (General Setup)
 
-**Goal:** Preprocess data, train a decision tree classifier to predict iris species, and evaluate using accuracy, precision, and recall.
+Before running any of the project scripts, please follow these general setup steps to ensure your environment is ready.
 
-**Dataset:** Iris Species Dataset (loaded directly from Scikit-learn).
+### 1.1 Python Installation
+
+Ensure you have Python installed on your system. Python **3.7 to 3.10** is recommended for compatibility with all libraries, especially TensorFlow.
+
+*   If you don't have Python, download it from [python.org](https://www.python.org/downloads/).
+*   **Crucial:** During installation, make sure to check the box that says **"Add Python to PATH"**.
+
+### 1.2 Install Project Dependencies
+
+All necessary Python packages for these projects are listed in the `requirements.txt` file within this `week 3` folder.
+
+1.  **Open your terminal or command prompt.**
+2.  **Navigate to the `week 3` directory** where this `README.md` file and the project scripts are located:
+    ```bash
+    cd path/to/your/ai for sotware engineering/week 3
+    ```
+    (Replace `path/to/your/ai for sotware engineering` with the actual path to your main project directory).
+3.  **Install the required packages:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+    *Note: The installation of TensorFlow might take some time depending on your internet speed and system specifications.* 
+
+---
+
+## 2. Task 1: Classical ML - Iris Species Classification
+
+**Goal:** To preprocess the Iris dataset, train a Decision Tree Classifier, and evaluate its performance using key metrics.
+
+**Dataset:** Iris Species Dataset (a classic dataset, loaded directly from `scikit-learn`).
 
 **File:** `iris_classification.py`
 
-**How to Run:**
-1.  Navigate to the `week 3` folder in your terminal:
-    ```bash
-    cd week 3
-    ```
-2.  Run the Python script:
+### How to Run:
+
+1.  Ensure you have completed the [General Setup](#1-getting-started-general-setup).
+2.  From your terminal, while inside the `week 3` directory, execute the script:
     ```bash
     python iris_classification.py
     ```
 
-**Expected Output:**
- The script will print messages about data loading, preprocessing, model training, and then display the accuracy, weighted precision, weighted recall, and a detailed classification report for each Iris species.
+### Expected Output:
+
+ The script will print messages to your console detailing the dataset loading, confirmation of no missing values, data splitting, and model training. Finally, it will display the model's performance metrics: Accuracy, Precision (weighted), Recall (weighted), and a comprehensive Classification Report that shows these metrics for each individual Iris species class.
 
 ---
 
-## 2. Task 2: Deep Learning with TensorFlow/Keras (MNIST Handwritten Digits Classification)
+## 3. Task 2: Deep Learning - MNIST Handwritten Digits Classification
 
-**Goal:** Build a CNN model to classify handwritten digits, aim for >95% test accuracy, and visualize the model's predictions on 5 sample images.
+**Goal:** To build and train a Convolutional Neural Network (CNN) to classify handwritten digits, aiming for high accuracy, and visualize its predictions.
 
-**Dataset:** MNIST Handwritten Digits (loaded directly from Keras).
+**Dataset:** MNIST Handwritten Digits (loaded directly from `tensorflow.keras.datasets`).
 
 **File:** `mnist_cnn.py`
 
-**How to Run:**
-1.  Navigate to the `week 3` folder in your terminal:
-    ```bash
-    cd week 3
-    ```
-2.  Run the Python script:
+### How to Run:
+
+1.  Ensure you have completed the [General Setup](#1-getting-started-general-setup).
+2.  From your terminal, while inside the `week 3` directory, execute the script:
     ```bash
     python mnist_cnn.py
     ```
 
-**Expected Output:**
- The script will show progress during model training (epochs, loss, accuracy). After training, it will print the final test loss and accuracy. A Matplotlib window will then pop up displaying 5 random test images with their true and predicted labels. Close this window to finish the script execution.
+### Expected Output:
 
-**Note:** This script also saves the trained model as `mnist_cnn_model.h5` in the `week 3` folder if the accuracy goal is met. This model is used by the Streamlit deployment.
+ The script will first display information about the dataset loading and preprocessing. It will then show the CNN model summary (architecture details). During training, you'll see epoch-by-epoch progress including loss and accuracy. After training, the final test loss and accuracy will be printed. A separate Matplotlib window will then appear, displaying 5 random handwritten digit images from the test set with their true and predicted labels. **You must close this plot window to allow the script to finish execution.**
+
+**Important Note:** This script saves the trained CNN model as `mnist_cnn_model.h5` in the `week 3` folder if the test accuracy achieved is greater than 95%. This saved model is essential for the Streamlit web application deployment in [Task 5](#5-deployment-mnist-digit-classifier-web-app-streamlit).
 
 ---
 
-## 3. Task 3: NLP with spaCy (Amazon Product Reviews - NER & Sentiment)
+## 4. Task 3: NLP - Amazon Product Reviews (NER & Sentiment)
 
-**Goal:** Perform Named Entity Recognition (NER) to extract product names and brands, and analyze sentiment (positive/negative) using a rule-based approach.
+**Goal:** To perform Named Entity Recognition (NER) to extract product names and brands from text reviews, and to analyze their sentiment using a rule-based approach.
 
-**Text Data:** Sample user reviews from Amazon Product Reviews (defined within the script).
+**Text Data:** Sample user reviews (defined directly within the script for demonstration purposes).
 
 **File:** `nlp_spacy.py`
 
-**How to Run:**
-1.  Navigate to the `week 3` folder in your terminal:
-    ```bash
-    cd week 3
-    ```
-2.  **Download spaCy Language Model (one-time setup):**
+### How to Run:
+
+1.  Ensure you have completed the [General Setup](#1-getting-started-general-setup).
+2.  **Crucial: Download the spaCy English Language Model (One-Time Setup):**
+    Before running `nlp_spacy.py` for the first time, you must download the necessary spaCy language model. Open your terminal or command prompt and run:
     ```bash
     python -m spacy download en_core_web_sm
     ```
-3.  Run the Python script:
+    This command downloads a small English model trained on web data, which is required for NER.
+3.  From your terminal, while inside the `week 3` directory, execute the script:
     ```bash
     python nlp_spacy.py
     ```
 
-**Expected Output:**
- The script will print the results of NER, showing extracted entities, potential brands, and product names for each review. Following that, it will display the sentiment (Positive/Negative/Neutral) for each review based on the rule-based analysis.
+### Expected Output:
+
+ The script will first confirm that the spaCy model has loaded. It will then print the results for each sample review, clearly showing the extracted entities (including potential brands and product names identified by heuristics), and the determined sentiment (Positive, Negative, or Neutral) based on the rule-based analysis.
 
 ---
 
-## 4. Deployment: MNIST Classifier with Streamlit
+## 5. Deployment: MNIST Digit Classifier Web App (Streamlit)
 
-**Goal:** Deploy your trained MNIST classifier as a web interface using Streamlit.
+**Goal:** To deploy the trained MNIST Handwritten Digits Classifier as an interactive web application that can be accessed via a web browser.
+
+**Live App Link:** [https://7bkqwtwovbiortken8uzuh.streamlit.app/](https://7bkqwtwovbiortken8uzuh.streamlit.app/)
 
 **Prerequisites:**
-*   You must have successfully run `mnist_cnn.py` (Task 2) at least once, and it should have saved the `mnist_cnn_model.h5` file in the `week 3` folder.
 
-**Files:**
-*   `mnist_app.py` (the Streamlit application)
-*   `mnist_cnn_model.h5` (the pre-trained model)
+*   You **must** have successfully run `mnist_cnn.py` (from [Task 2](#task-2-deep-learning---mnist-handwritten-digits-classification)) at least once.
+*   This is important because `mnist_cnn.py` trains the model and saves it as `mnist_cnn_model.h5`, which the Streamlit app (`mnist_app.py`) loads to make predictions.
 
-### Running Locally (for testing)
-1.  Navigate to the `week 3` folder in your terminal:
-    ```bash
-    cd week 3
-    ```
-2.  Run the Streamlit application:
+**Files Involved:**
+
+*   `mnist_app.py`: The main Streamlit application code.
+*   `mnist_cnn_model.h5`: The pre-trained neural network model (generated by `mnist_cnn.py`).
+
+### How to Run Locally (for testing and development):
+
+If you wish to run the Streamlit application on your local machine:
+
+1.  Ensure you have completed the [General Setup](#1-getting-started-general-setup).
+2.  From your terminal, while inside the  directory, execute the Streamlit command:
     ```bash
     streamlit run mnist_app.py
     ```
-    Your default web browser will open to `http://localhost:8501/` (or a similar address) displaying the app.
-
-### Deploying to Streamlit Community Cloud (for sharing)
-This method allows you to deploy your app directly from a GitHub repository for free.
-
-1.  **Create a GitHub Repository:**
-    *   Create a new **public** GitHub repository (e.g., `ml-dl-nlp-tasks`).
-    *   **Add your `week 3` files to this repository.** The essential files for deployment are:
-        *   `week 3/mnist_app.py`
-        *   `week 3/mnist_cnn_model.h5`
-        *   `week 3/requirements.txt`
-    *   Push these files to your GitHub repository.
-
-2.  **Sign up for Streamlit Community Cloud:**
-    *   Go to [share.streamlit.io](https://share.streamlit.io/) and sign in with your GitHub account.
-
-3.  **Deploy Your App:**
-    *   Click on **"New app"**.
-    *   Provide the following details:
-        *   **Repository:** Select your GitHub repository.
-        *   **Branch:** Select the branch (e.g., `main`).
-        *   **Main file path:** `week 3/mnist_app.py` (This is crucial! It tells Streamlit where your app script is within your repo).
-        *   **Python version:** Choose a compatible Python version.
-    *   Click **"Deploy!"**
-    *   Streamlit will build and deploy your application. Once complete, you'll receive a unique URL to access and share your live app.
+    Your default web browser should automatically open to a local address (e.g., `http://localhost:8501/`) displaying the MNIST Digit Classifier web application. You can then upload an image of a handwritten digit to get a prediction.
 
 ---
 
-## File Structure of `week 3`
+## Folder Structure
 
 ```
 week 3/
-├── iris_classification.py
-├── mnist_cnn.py
-├── mnist_app.py
-├── nlp_spacy.py
-├── requirements.txt
-└── README.md
+├── iris_classification.py      # Classical ML Task
+├── mnist_cnn.py                # Deep Learning Task
+├── mnist_app.py                # Streamlit Web App for MNIST Classifier
+├── nlp_spacy.py                # NLP Task
+├── requirements.txt            # Python dependencies for all tasks
+└── README.md                   # This documentation file
 ``` 
